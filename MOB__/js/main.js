@@ -1,0 +1,14 @@
+jQuery(document).ready(function(){
+    jQuery('.tab_img_hover').click(function(event){
+        jQuery('.active-tab').removeClass('active-tab');
+        jQuery(this).addClass('active-tab');
+        event.preventDefault();
+    });
+});
+jQuery(document).ready(function(){
+    jQuery('.tab_img_hover2').click(function(event){
+        jQuery('.active-tab').removeClass('active-tab');
+        jQuery(this).addClass('active-tab');
+        event.preventDefault();
+    });
+});
