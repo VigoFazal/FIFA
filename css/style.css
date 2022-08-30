@@ -37,7 +37,7 @@
   font-display: swap;
 }
 
-.chinese__font_xl_bold, .tab.match .nav-tabs .nav-item .nav-link {
+.chinese__font_xl_bold, .tab.match .nav-tabs .nav-item .nav-link, .barTag__prize__btn a {
   font-family: "FZRuiZhengYuanS";
   font-weight: bold;
   font-style: normal;
@@ -113,11 +113,6 @@
   margin: 0;
 }
 
-section, .row {
-  outline: 0.5px solid rgba(255, 0, 0, 0.76);
-  background: rgba(25, 28, 59, 0.3098039216);
-}
-
 .english__font_Regular, .modal.default .modal-dialog .modal-body form .no__account p, .modal.default .modal-dialog .modal-body form .modal__btn, .modal.default .modal-dialog .modal-body form .input-group .form-text, .modal.default .modal-dialog .modal-body form .input-group .form-control, .modal.default .modal-dialog .modal-body form .input-group .input-group-text.otp button, .matchBar .card__timer h3, .matchBar .bar__layout.update .bar__flag_tittle.center, .matchBar .bar__layout.update .top__bar_time p, .tab .row .table tbody tr th, .tab .row .table tbody tr td {
   font-family: "Myriad Pro Regular";
   font-style: normal;
@@ -167,7 +162,7 @@ a:hover {
   max-width: 1050px;
   width: 90%;
   margin: auto;
-  margin-bottom: 45px;
+  margin-bottom: 56px;
 }
 
 .warning__btn, .secondary__btn {
@@ -191,14 +186,25 @@ a:hover {
 
 .group__btns {
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 .group__btns li a {
-  margin-right: 20px;
+  margin-right: 25px;
+  padding: 0;
+  width: 187px;
+  height: 56px;
+  display: flex;
+  color: #222353;
+  align-items: center;
+  justify-content: center;
 }
 
 .w-fit {
   min-width: fit-content !important;
+}
+
+.tab-bar .nav-tabs {
+  margin: 0 0 57px 0 !important;
 }
 
 .barTag__prize__btn {
@@ -213,8 +219,14 @@ a:hover {
   font-weight: bold;
   letter-spacing: 3px;
   line-height: 0;
-  padding: 10px 45px;
-  font-size: 32px;
+  height: 100px;
+  padding: 0;
+  width: 293px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 46px;
+  margin: 0 auto;
 }
 
 header {
@@ -232,7 +244,7 @@ header .navbar-nav .nav-item .nav-link {
   border-style: solid;
   border-radius: 12px;
   width: 187px;
-  padding: 13px 15px;
+  padding: 0px 15px;
   font-family: "adobe_heiti_stdr";
   font-weight: normal;
   letter-spacing: 1px;
@@ -240,6 +252,7 @@ header .navbar-nav .nav-item .nav-link {
   font-size: 16.729px;
   line-height: 1.121;
   margin-right: 16px;
+  height: 40px;
 }
 header .navbar-nav .nav-item .nav-link::placeholder {
   color: #222353;
@@ -259,8 +272,10 @@ header .navbar-nav .nav-item .forgot {
 header .navbar-nav .nav-item .nav-link.rounded-pill {
   background: #222353;
   color: #ffffff;
-  padding: 14px 40px;
+  padding: 0px 40px;
   width: fit-content;
+  display: flex;
+  align-items: center;
 }
 header .navbar-nav .nav-item .nav-link.rounded-pill.warn {
   background: #e4bc50;
@@ -291,7 +306,7 @@ header .dropdown-item.flagi {
   width: 80%;
 }
 .barTag .barTag__prize {
-  width: 70%;
+  width: 80%;
   margin-top: -30px;
 }
 .barTag .barTag__content_z {
@@ -299,9 +314,13 @@ header .dropdown-item.flagi {
   width: 100%;
   margin: auto;
 }
-.barTag .barTag__info {
-  margin: 40px auto;
+.barTag .info-text {
+  padding: 15px 0 40px 0;
+}
+.barTag .info-text .barTag__info {
+  margin: 0 auto;
   font-size: 32.29px;
+  color: #222353;
 }
 
 .side__menu .dropdown-toggle {
@@ -333,7 +352,7 @@ header .dropdown-item.flagi {
 .side__menu .side__menu__layout {
   background: #222353;
   border-top-left-radius: 35px;
-  border: 3px solid #ffffff;
+  border: 5px solid #ffffff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px 15px;
   padding-right: 0px;
@@ -344,15 +363,14 @@ header .dropdown-item.flagi {
   margin-right: 7px;
 }
 .side__menu .side__menu__link li {
-  padding: 8px 20px;
+  padding: 6px 18px;
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
 }
 .side__menu .side__menu__link li a {
   display: flex;
   align-items: center;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 23px;
   letter-spacing: 2px;
 }
 .side__menu .side__menu__link li a:hover {
@@ -427,7 +445,7 @@ header .dropdown-item.flagi {
   padding-bottom: 50px;
 }
 .steps .section__tittle {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .steps .steps__layout {
   text-align: center;
@@ -458,7 +476,7 @@ header .dropdown-item.flagi {
   background: #222353;
   color: #ffffff;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .tab .row .nav-tabs .nav-item {
   background: transparent;
@@ -466,10 +484,11 @@ header .dropdown-item.flagi {
 }
 .tab .row .nav-tabs .nav-item .nav-link {
   color: #ffffff;
-  padding: 15px 65px;
+  padding: 0 59px;
   font-size: 25px;
   font-weight: normal;
   transition: 0.3s all;
+  height: 56px;
 }
 .tab .row .nav-tabs .nav-item .active {
   background: #e4bc50;
@@ -480,10 +499,13 @@ header .dropdown-item.flagi {
   transition: 0.2s all;
 }
 .tab .row .tab-content {
-  padding: 0px 25px;
+  padding: 0px 43px;
   height: auto;
+  max-width: 1510px;
+  width: 100%;
+  margin: 0 auto;
   border: 0px solid;
-  border-image: url(../images/table__border.png) 92/18px/10px;
+  border-image: url(../images/table__border.png) 78/25px/12px;
 }
 .tab .row .table {
   border-collapse: separate;
@@ -649,7 +671,7 @@ header .dropdown-item.flagi {
   padding-top: 12px;
 }
 .timer .notice__message {
-  margin: 33px auto;
+  margin: 29px auto 20px;
 }
 .timer .notice__message img {
   width: 33px;
@@ -850,7 +872,7 @@ header .dropdown-item.flagi {
   background: none;
   max-width: 470px;
   margin-right: 5px;
-  margin-bottom: 65px;
+  margin-bottom: 35px;
 }
 .matchBar .bar__layout.update .top__bar_time {
   position: absolute;
@@ -894,6 +916,7 @@ header .dropdown-item.flagi {
 .matchBar .bar__layout.update .bar__flag_tittle.center {
   color: #000;
   left: 44%;
+  letter-spacing: 1px;
 }
 .matchBar .bar__layout.update .bar__vs {
   background: none;
@@ -1016,10 +1039,11 @@ header .dropdown-item.flagi {
 
 .tab.match .nav-tabs .nav-item .nav-link {
   color: #ffffff;
-  padding: 15px 28px;
+  padding: 0 37px;
   font-size: 21px;
   font-weight: 900;
   transition: 0.3s all;
+  height: 56px;
 }
 .tab.match .nav-tabs .nav-item .nav-link .nav-item {
   margin-right: 14px;
@@ -1167,12 +1191,12 @@ header .dropdown-item.flagi {
 }
 
 footer {
-  background: #222353;
+  background: #36365a;
   color: #ffffff;
-  padding: 57px 0px;
+  padding: 62px 0px;
 }
 footer .row ul li {
-  margin-right: 100px;
+  margin-right: 85px;
 }
 footer .row ul li a {
   font-size: 24px;
@@ -1187,7 +1211,7 @@ footer .row ul .divider {
   width: 6px;
   height: 52px;
   background: #ffffff;
-  margin-right: 100px;
+  margin-right: 112px;
 }
 footer .row ul .be_city {
   width: 180px;

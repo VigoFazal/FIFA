@@ -155,15 +155,15 @@ $theme : #ecfaff;
     margin: 0;
 
 }
-* {
-    // outline: 0.5px solid rgba(255, 0, 0, 0.76);
-    // background: rgba(8, 63, 245, 0.267);
-}
-section,.row {
-    outline: 0.5px solid rgba(255, 0, 0, 0.76);
-    background: #191c3b4f
+// * {
+//     // outline: 0.5px solid rgba(255, 0, 0, 0.76);
+//     // background: rgba(8, 63, 245, 0.267);
+// }
+// section,.row {
+//     outline: 0.5px solid rgba(255, 0, 0, 0.76);
+//     background: #191c3b4f
 
-}
+// }
 body {
     @extend .chinese__font_regular;
 }
@@ -212,7 +212,7 @@ a {
     max-width: 1050px;
     width: 90%;
     margin: auto;
-    margin-bottom: 45px;
+    margin-bottom: 56px;
 }
 .warning__btn {
     background: #e4bc50;
@@ -235,14 +235,25 @@ a {
 }
 .group__btns {
     li a {
-        margin-right: 20px;
+        margin-right: 25px;
+        padding: 0;
+        width: 187px;
+        height: 56px; ;
+        display: flex;
+        color: $primary;
+        align-items: center;
+        justify-content: center;
+         
     }
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 
 .w-fit {
     min-width: fit-content !important;
+}
+.tab-bar  .nav-tabs{
+    margin: 0 0 57px 0 !important;
 }
 .barTag__prize__btn {
     left: 50%;
@@ -253,10 +264,17 @@ a {
     a {
         border: 3px solid $white;
         font-weight: bold;
+        @extend .chinese__font_xl_bold;
         letter-spacing: 3px;
         line-height: 0;
-        padding: 10px 45px;
-        font-size: 32px;
+        height: 100px;
+        padding: 0;
+width: 293px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 46px;
+        margin: 0 auto;
     }
 }
 // HEADER ==================== 
@@ -278,7 +296,7 @@ header {
                 border-style: solid;
                 border-radius: 12px;
                 width: 187px;  
-                padding: 13px  15px;
+                padding: 0px  15px;
                 font-family: 'adobe_heiti_stdr';
                 font-weight: normal;
                 letter-spacing: 1px;
@@ -286,6 +304,7 @@ header {
                 font-size: 16.729px;
                 line-height: 1.121;
                 margin-right: 16px;
+                height: 40px;
                 &::placeholder {
                     color: $primary;
                     font-family: 'adobe_heiti_stdr';
@@ -307,8 +326,10 @@ header {
             .nav-link.rounded-pill {
                 background: $primary;
                 color: $white;
-                padding: 14px 40px;
+                padding: 0px 40px;
                 width: fit-content;
+                display: flex;
+                align-items: center;
             }
             .nav-link.rounded-pill.warn {
                 background: $warning;
@@ -346,7 +367,7 @@ header {
         width: 80%
     }
     .barTag__prize {
-        width: 70%;
+        width: 80%;
         margin-top: -30px;
     }
     .barTag__content_z{
@@ -354,10 +375,14 @@ header {
         width: 100%;
         margin: auto;
     }
+    .info-text{
+        padding: 15px 0 40px 0;
     .barTag__info {
-        margin: 40px auto;
+        margin: 0 auto;
         font-size: 32.29px;
+        color: $primary;
     }
+}
 }
 
 .side__menu {
@@ -394,7 +419,7 @@ header {
     .side__menu__layout {
         background: $primary;
         border-top-left-radius: 35px;
-        border: 3px solid $white;
+        border: 5px solid $white;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         padding: 20px 15px;
         padding-right: 0px;
@@ -411,15 +436,14 @@ header {
         ul {
         }
         li {
-            padding: 8px 20px;
+            padding: 6px 18px;
             border-top-right-radius: 0px !important;
             border-bottom-right-radius: 0px !important;
             a {
                 display: flex;
-                align-items: center;
-                font-size: 15px;
-                font-weight: 600;
-                letter-spacing: 2px;
+align-items: center;
+font-size: 23px;
+letter-spacing: 2px;
                 @extend .chinese__font_regular;
                 &:hover {
                     color: $primary;
@@ -508,7 +532,7 @@ header {
     background: transparent;
     padding-bottom: 50px;
     .section__tittle {
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
     .steps__layout {
         text-align: center;
@@ -569,16 +593,17 @@ header {
             background: $primary;
             color: $white;
             padding: 0;
-            margin-bottom: 50px;
+margin-bottom: 30px;
             .nav-item {
                 background: transparent;
                 margin-right: 10px;
                 .nav-link {
                     color: $white;
-                    padding: 15px 65px;
-                    font-size: 25px;
-                    font-weight: normal;
-                    transition: 0.3s all;
+                    padding: 0 59px;
+font-size: 25px;
+font-weight: normal;
+transition: 0.3s all;
+height: 56px;
                     
                 }
                 .active {
@@ -593,11 +618,14 @@ header {
             }
         }
         .tab-content {
-            padding: 0px 25px;
+            padding: 0px 43px;
             height: auto;
+            max-width: 1510px;
+            width: 100%;
+            margin: 0 auto;
             // border: 20px solid;
             border: 0px solid;
-            border-image: url(../images/table__border.png) 92/18px/10px;
+            border-image: url(../images/table__border.png) 78/25px/12px;
         }
         .table {
             border-collapse:separate; 
@@ -795,7 +823,7 @@ header {
             padding-top: 12px;
         }
         .notice__message{
-            margin: 33px auto;
+            margin: 29px auto 20px;
             img {
                 width: 33px;
                 margin-right: 13px;
@@ -1072,7 +1100,7 @@ left: -24px;
         background: none;
         max-width: 470px;
         margin-right: 5px;
-        margin-bottom: 65px;
+        margin-bottom: 35px;
         .top__bar_time {
             position: absolute;
             left: 50%;
@@ -1119,6 +1147,7 @@ left: -24px;
         .bar__flag_tittle.center {
             color: #000;
             left: 44%;
+            letter-spacing: 1px;
             @extend .english__font_Regular;
         }
         .bar__vs {
@@ -1320,10 +1349,11 @@ left: -24px;
   
 .tab.match .nav-tabs .nav-item .nav-link {
     color: #ffffff;
-    padding: 15px 28px;
-    font-size: 21px;
-    font-weight: 900;
-    transition: 0.3s all;
+    padding: 0 37px;
+font-size: 21px;
+font-weight: 900;
+transition: 0.3s all;
+height: 56px; 
     @extend .chinese__font_xl_bold;
     .nav-item {
         margin-right: 14px;
@@ -1490,9 +1520,9 @@ left: -24px;
 
 // FOOTER =============== 
 footer {
-    background: $primary;
+    background: #36365a;
     color: $white;
-    padding: 57px 0px;
+    padding: 62px 0px;
     .row {
         ul {
             li {
@@ -1505,13 +1535,13 @@ footer {
                     border-bottom: 1.5px solid$white;
                     letter-spacing: 4px;
                 }
-                margin-right: 100px;
+                margin-right: 85px;
             }
             .divider {
                 width: 6px;
                 height: 52px;
                 background: $white;
-                margin-right: 100px;
+                margin-right: 112px;
             }
             .be_city {
                 width: 180px;

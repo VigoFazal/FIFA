@@ -81,6 +81,35 @@
         padding: 4px 25px;
         font-size: 18px;
     }
+    main .myProfile .form-label {
+        font-size: 20px;
+        letter-spacing: 5px;
+        color: #222353;
+        margin-bottom: 15px;
+    }
+    main .myProfile input {
+        box-shadow: none !important;
+        border: none;
+        border-radius: 12px;
+        background: #dddddd;
+        padding: 12px 20px;
+        font-size: 19px;
+        transition: 0.3s all;
+        width: calc(100% - 40px);
+        margin-left: auto;
+    }
+    main .update {
+        font-size: 24px;
+        letter-spacing: 7px;
+        text-decoration: underline;
+        color: #222353;
+        line-height: 120%;
+        margin-bottom: 35px;
+        margin-top: 60px;
+    }
+    .timer__layout {
+        transform: scale(0.6) translateX(-11%);
+    }
 }
 @media (max-width:525px){
     .rounds .round__card .round__card_frame {
@@ -244,6 +273,13 @@
         width: 150px !important;
         height: 38px;
     }
+    .timer__layout {
+        transform: scale(0.5) translateX(-22%);
+    }
+    .notice__message p {
+        font-size: 19.52px;
+        color: #222353;
+    }
 }
 @media (max-width:430px){
     footer .footer__menu li {
@@ -252,7 +288,7 @@
     footer .footer__menu .footer_menu_up {
         width: 32px;
         height: 32px;
-        margin-bottom: 8px;
+        margin-bottom: 2px;
     }
     footer .footer__menu li a .footer_icon.level {
         width: 100%;
@@ -336,6 +372,21 @@
     .rounds {
         padding: 65px 0px;
     }
+    main .myProfile input {
+        width: calc(100% - 0px);
+    }
+    main .myProfile .form-text {
+        width: calc(100% - 0px);
+    }
+    main .myProfile .form-label {
+        font-size: 20px;
+        letter-spacing: 5px;
+        color: #222353;
+        margin-bottom: 3px;
+    }
+    .timer__layout {
+        transform: scale(0.5) translateX(-32%);
+    }
 }
 @media (max-width:350px){
     .pts .pts__landscape {
@@ -357,5 +408,9 @@
     .bc888 .bc888__exchange {
         font-size: 17px;
     }
+    .timer__layout {
+        transform: scale(0.5) translateX(-45%);
+    }
+
 
 }

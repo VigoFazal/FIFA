@@ -23,7 +23,7 @@
   font-style: normal;
   font-display: swap;
 }
-.chinese__font_regular, .game__layout .game__card_flag_text .left, .game__layout .game__card_flag_text .right, .game__layout .game__card_group span, .gold__btn, .gray__btn, .final__band .notice__message, .final__band .step__bar, *, body {
+.chinese__font_regular, .dropdown-menu.show li a, .game__layout .flip-clock-small-wrapper .flip-clock-divider .flip-clock-label, .game__layout .timer__text, .game__layout .game__card_flag_text .left, .game__layout .game__card_flag_text .right, .game__layout .game__card_group span, .gold__btn, .gray__btn, .final__band .notice__message, .final__band .step__bar, .modal.default .warn__text, .modal.default .warn, *, body {
   font-family: "FZRuiZhengYuanS";
   font-weight: 500;
   font-style: normal;
@@ -37,7 +37,7 @@
   font-display: swap;
 }
 
-.chinese__font_xl_bold, .pts .pts__landscape .pts__landscape_point, .rounds .round__card .round__card_source, .tab.leader .nav-tabs .nav-link {
+.chinese__font_xl_bold, main .card .card__tittle, .pts .pts__landscape .pts__landscape_point, .rounds .round__card .round__card_source, .tab.leader .nav-tabs .nav-link {
   font-family: "FZRuiZhengYuanS";
   font-weight: bold;
   font-style: normal;
@@ -148,7 +148,8 @@ a:hover {
   font-style: normal;
 }
 
-.english__font_Regular, .pts .pts__landscape .pts__landscape_no, .rounds .round__card .round__card_no p, .modal.default .modal-dialog .modal-body form .no__account p, .modal.default .modal-dialog .modal-body form .modal__btn, .modal.default .modal-dialog .modal-body form .input-group .form-text, .modal.default .modal-dialog .modal-body form .input-group .form-control, .modal.default .modal-dialog .modal-body form .input-group .input-group-text.otp button {
+.english__font_Regular, .tab .table tbody tr th,
+.tab .table tbody tr td, .pts .pts__landscape .pts__landscape_no, .rounds .round__card .round__card_no p, .modal.default .modal-dialog .modal-body form .no__account p, .modal.default .modal-dialog .modal-body form .modal__btn, .modal.default .modal-dialog .modal-body form .input-group .form-text, .modal.default .modal-dialog .modal-body form .input-group .form-control, .modal.default .modal-dialog .modal-body form .input-group .input-group-text.otp button {
   font-family: "Myriad Pro Regular";
   font-style: normal;
   font-weight: normal;
@@ -210,6 +211,27 @@ header .navbar-brand > img {
 }
 header .navbar-brand .flag {
   width: 35px;
+}
+header .dropdown.change {
+  width: 35px;
+}
+header .dropdown-toggle::after {
+  content: none;
+}
+header .dropdown-menu {
+  min-width: fit-content;
+}
+header .dropdown-menu img.flag {
+  width: 35px;
+}
+header .dropdown-menu.show {
+  margin-top: 5px !important;
+  padding: 8px 3px !important;
+}
+header .dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: auto;
+  right: -40% !important;
 }
 header .offcanvas {
   background-image: url(../images/side__bar.png);
@@ -420,6 +442,20 @@ header .side__pages .side_qr {
 .modal.default .modal-dialog .modal-body form .no__account a {
   font-weight: 600;
 }
+.modal.default .three__btns .gold__btn, .modal.default .three__btns .gray__btn, .modal.default .three__btns .gray__btn {
+  font-size: 18px;
+  height: 49px;
+  width: 130px;
+}
+.modal.default .warn {
+  font-size: 34px;
+  color: #e4bc50;
+  letter-spacing: 1px;
+}
+.modal.default .warn__text {
+  color: #ffffff;
+  font-size: 18px;
+}
 
 .stage {
   padding-top: 28px;
@@ -474,12 +510,13 @@ header .side__pages .side_qr {
   padding: 0;
   width: 162px !important;
   height: 50px;
+  letter-spacing: 1px;
 }
 .tab.leader .nav-tabs .nav-link:hover {
   color: #ffffff;
 }
 .tab.leader .nav-tabs .nav-link.active {
-  color: #ffffff;
+  color: #222353;
   background-image: url(../images/Leaderboard_tabs.svg);
   background-size: 100% 100%;
   transform: scale(1.2);
@@ -699,16 +736,16 @@ main .card .card__tittle {
 main .card .card__body {
   padding: 14px 12px;
   border: 10px solid;
-  border-image: url(../images/full__bar_border.png) 150/12px/0px stretch;
+  border-image: url(../images/full__bar_border.png) 140/17px/0px stretch;
 }
 main .card .card__body p {
-  font-size: 18px;
+  font-size: 14px;
   color: #222353;
   line-height: 140%;
   margin-bottom: 0;
 }
 main .card .card__body ul li, main .card .card__body ol li {
-  font-size: 19px;
+  font-size: 16px;
   color: #222353;
   line-height: 140%;
   margin-bottom: 5px;
@@ -792,7 +829,7 @@ main .btn:hover {
   transition: 0.4s all;
 }
 
-.chinese__font_regular, .game__layout .game__card_flag_text .left, .game__layout .game__card_flag_text .right, .game__layout .game__card_group span, .gold__btn, .gray__btn, .final__band .notice__message, .final__band .step__bar, *, body {
+.chinese__font_regular, .dropdown-menu.show li a, .game__layout .flip-clock-small-wrapper .flip-clock-divider .flip-clock-label, .game__layout .timer__text, .game__layout .game__card_flag_text .left, .game__layout .game__card_flag_text .right, .game__layout .game__card_group span, .gold__btn, .gray__btn, .final__band .notice__message, .final__band .step__bar, *, body, .modal.default .warn, .modal.default .warn__text {
   font-family: "FZRuiZhengYuanS";
   font-weight: 500;
   font-style: normal;
@@ -806,7 +843,7 @@ main .btn:hover {
   font-display: swap;
 }
 
-.chinese__font_xl_bold, .tab.leader .nav-tabs .nav-link, .rounds .round__card .round__card_source, .pts .pts__landscape .pts__landscape_point {
+.chinese__font_xl_bold, .tab.leader .nav-tabs .nav-link, .rounds .round__card .round__card_source, .pts .pts__landscape .pts__landscape_point, main .card .card__tittle {
   font-family: "FZRuiZhengYuanS";
   font-weight: bold;
   font-style: normal;
@@ -931,7 +968,7 @@ main .btn:hover {
 }
 .three__btns .gold__btn, .three__btns .gray__btn {
   background-image: url(../images/btn__gold.png);
-  height: 54px;
+  height: 56px;
   width: 160px;
   font-size: 22px;
 }
@@ -940,6 +977,7 @@ main .btn:hover {
   background-image: url(../images/bg__.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  max-height: 100vh;
 }
 
 .timer__layout {
@@ -1100,7 +1138,7 @@ main .btn:hover {
   font-weight: normal;
 }
 
-.chinese__font_regular, .game__layout .game__card_flag_text .left, .game__layout .game__card_flag_text .right, .game__layout .game__card_group span, *, body, .final__band .step__bar, .final__band .notice__message, .gold__btn, .gray__btn {
+.chinese__font_regular, .dropdown-menu.show li a, .game__layout .flip-clock-small-wrapper .flip-clock-divider .flip-clock-label, .game__layout .timer__text, .game__layout .game__card_flag_text .left, .game__layout .game__card_flag_text .right, .game__layout .game__card_group span, *, body, .modal.default .warn, .modal.default .warn__text, .final__band .step__bar, .final__band .notice__message, .gold__btn, .gray__btn {
   font-family: "FZRuiZhengYuanS";
   font-weight: 500;
   font-style: normal;
@@ -1114,7 +1152,7 @@ main .btn:hover {
   font-display: swap;
 }
 
-.chinese__font_xl_bold, .tab.leader .nav-tabs .nav-link, .rounds .round__card .round__card_source, .pts .pts__landscape .pts__landscape_point {
+.chinese__font_xl_bold, .tab.leader .nav-tabs .nav-link, .rounds .round__card .round__card_source, .pts .pts__landscape .pts__landscape_point, main .card .card__tittle {
   font-family: "FZRuiZhengYuanS";
   font-weight: bold;
   font-style: normal;
@@ -1188,6 +1226,73 @@ main .btn:hover {
   position: absolute;
   inset: 0;
 }
+.game__layout .timer__text {
+  font-size: 22px;
+  color: black;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  top: 18px;
+}
+.game__layout .timer__cardy {
+  width: 240px;
+  padding: 10px 0px;
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.game__layout .flip-clock-small-wrapper .flip-clock-divider .flip-clock-label {
+  position: absolute;
+  top: 114%;
+  right: -40px;
+  color: black;
+  text-shadow: none;
+  font-size: 10px;
+}
+.game__layout .flip-clock-small-wrapper .flip-clock-dot.top {
+  display: none;
+}
+.game__layout .flip-clock-small-wrapper .flip-clock-dot.bottom {
+  display: none;
+}
+.game__layout .flip-clock-wrapper ul li a div div.inn, .game__layout .flip-clock-small-wrapper ul li a div div.inn {
+  color: black;
+  background-color: #ececeb;
+  box-shadow: none;
+  font-family: "Oswald", sans-serif !important;
+  font-weight: 700;
+  font-size: 30px;
+  text-shadow: none;
+}
+.game__layout .flip-clock-small-wrapper ul {
+  position: relative;
+  float: left;
+  margin: 0px;
+  width: 30px;
+  padding: 0;
+  height: 38px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 37px;
+  border-radius: 0px;
+  background-color: #ececeb;
+}
+.game__layout .flip-clock-small-wrapper ul li a {
+  position: relative;
+}
+.game__layout .flip-clock-small-wrapper ul li a::after {
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.943);
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  z-index: 99;
+  left: 0;
+}
 
 .tab_img_hover.active-tab, .tab_img_hover2.active-tab {
   width: 23%;
@@ -1223,6 +1328,139 @@ main .btn:hover {
   opacity: 1;
 }
 
+.english__font, .bc888 .bc888__exchange span, .bc888 .bc888__exchange .dropdown-toggle, .game__layout .game__card_group, .game__layout .game__card_footer div {
+  font-family: "Myriad Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.chinese__font_regular, .dropdown-menu.show li a, *, body, .modal.default .warn, .modal.default .warn__text, .final__band .step__bar, .final__band .notice__message, .gold__btn, .gray__btn, .game__layout .game__card_group span, .game__layout .game__card_flag_text .left, .game__layout .game__card_flag_text .right, .game__layout .timer__text, .game__layout .flip-clock-small-wrapper .flip-clock-divider .flip-clock-label {
+  font-family: "FZRuiZhengYuanS";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.chinese__font_bold, .rounds .round__card .round__card_username, .pts .pts__landscape .pts__landscape_username, .bc888 {
+  font-family: "FZRuiZhengYuanS";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.chinese__font_xl_bold, .tab.leader .nav-tabs .nav-link, .rounds .round__card .round__card_source, .pts .pts__landscape .pts__landscape_point, main .card .card__tittle {
+  font-family: "FZRuiZhengYuanS";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.tab {
+  padding-bottom: 60px;
+}
+.tab .table {
+  border-collapse: separate;
+  border-spacing: 0em 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.tab .table thead {
+  background-image: url(../images/table_Title.png);
+  background-size: 100% 100%;
+}
+.tab .table thead tr th {
+  font-size: 20px;
+  font-weight: normal;
+  color: #ffffff;
+  padding: 15px 10px;
+  text-align: center;
+  font-family: "FZRuiZhengYuanS";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.tab .table thead tr th:last-child {
+  padding-right: 10px;
+}
+.tab .table tbody tr {
+  padding-bottom: 10px !important;
+  background: #bbc7ee;
+  box-shadow: 0px 0px 7.4px rgba(205, 223, 255, 0.039), 0px 0px 4.5px rgba(0, 0, 0, 0.069), 0px 0px 6.1px rgba(0, 0, 0, 0.089), 0px 0px 6.9px rgba(0, 0, 0, 0.096), 0px 0px 0.3px rgba(0, 0, 0, 0.088), 0px 0px 2.8px rgba(0, 0, 0, 0.063), 0px 0px 24px rgba(0, 0, 0, 0.28);
+}
+.tab .table tbody tr th,
+.tab .table tbody tr td {
+  font-size: 18px;
+  font-weight: normal;
+  color: #222353;
+  padding: 10px 10px;
+  text-align: center;
+}
+.tab .table tbody tr th:first-child,
+.tab .table tbody tr td:first-child {
+  padding-left: 15px;
+}
+.tab .table tbody tr th:last-child,
+.tab .table tbody tr td:last-child {
+  padding-right: 0px;
+}
+.tab .table__user {
+  position: absolute;
+  width: 82px;
+  transform: translate(-140%, -30%);
+}
+.tab .table > :not(caption) > * > * {
+  border-bottom: none;
+}
+
+.dropdown-menu.show {
+  display: block;
+  padding: 10px 20px !important;
+  margin-top: 20px !important;
+  background: #eeedeb;
+}
+.dropdown-menu.show li a {
+  color: #222353 !important;
+}
+
+.dropdown-toggle::after {
+  margin-left: 5px;
+  vertical-align: -0.3em;
+  border-top: 1em solid;
+  border-right: 0.5em solid transparent;
+  border-left: 0.5em solid transparent;
+  transform: scale(0.7);
+}
+
+@media (max-width: 566px) {
+  .tab .table tbody tr td {
+    font-size: 12px;
+    padding: 10px 0px;
+  }
+  .tab .table tbody tr th,
+.tab .table tbody tr td {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+  .tab .table thead tr th {
+    font-size: 12px;
+    padding: 15px 0px;
+  }
+  .tab .table tbody tr th:first-child {
+    padding-left: 8px;
+  }
+}
+@media (max-width: 335px) {
+  .tab .table tbody tr td {
+    font-size: 10px;
+  }
+  .tab .table tbody tr th,
+.tab .table tbody tr td {
+    font-size: 10px;
+  }
+  .tab .table thead tr th {
+    font-size: 10px;
+  }
+}
 @media (max-width: 700px) {
   .navbar-nav .nav-item .nav-link, .sub__nav .nav-item .nav-link {
     border-width: 2px;
@@ -1304,6 +1542,35 @@ main .btn:hover {
   .step .step__bar {
     padding: 4px 25px;
     font-size: 18px;
+  }
+  main .myProfile .form-label {
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #222353;
+    margin-bottom: 15px;
+  }
+  main .myProfile input {
+    box-shadow: none !important;
+    border: none;
+    border-radius: 12px;
+    background: #dddddd;
+    padding: 12px 20px;
+    font-size: 19px;
+    transition: 0.3s all;
+    width: calc(100% - 40px);
+    margin-left: auto;
+  }
+  main .update {
+    font-size: 24px;
+    letter-spacing: 7px;
+    text-decoration: underline;
+    color: #222353;
+    line-height: 120%;
+    margin-bottom: 35px;
+    margin-top: 60px;
+  }
+  .timer__layout {
+    transform: scale(0.6) translateX(-11%);
   }
 }
 @media (max-width: 525px) {
@@ -1468,6 +1735,13 @@ main .btn:hover {
     width: 150px !important;
     height: 38px;
   }
+  .timer__layout {
+    transform: scale(0.5) translateX(-22%);
+  }
+  .notice__message p {
+    font-size: 19.52px;
+    color: #222353;
+  }
 }
 @media (max-width: 430px) {
   footer .footer__menu li {
@@ -1476,7 +1750,7 @@ main .btn:hover {
   footer .footer__menu .footer_menu_up {
     width: 32px;
     height: 32px;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
   }
   footer .footer__menu li a .footer_icon.level {
     width: 100%;
@@ -1557,6 +1831,21 @@ main .btn:hover {
   .rounds {
     padding: 65px 0px;
   }
+  main .myProfile input {
+    width: calc(100% - 0px);
+  }
+  main .myProfile .form-text {
+    width: calc(100% - 0px);
+  }
+  main .myProfile .form-label {
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #222353;
+    margin-bottom: 3px;
+  }
+  .timer__layout {
+    transform: scale(0.5) translateX(-32%);
+  }
 }
 @media (max-width: 350px) {
   .pts .pts__landscape {
@@ -1577,5 +1866,8 @@ main .btn:hover {
   }
   .bc888 .bc888__exchange {
     font-size: 17px;
+  }
+  .timer__layout {
+    transform: scale(0.5) translateX(-45%);
   }
 }/*# sourceMappingURL=style.css.map */

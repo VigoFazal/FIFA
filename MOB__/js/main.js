@@ -12,3 +12,50 @@ jQuery(document).ready(function(){
         event.preventDefault();
     });
 });
+
+
+
+
+
+$(function(){
+	FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+	var opts = {
+		clockFace: 'HourCounter',
+		countdown: true,
+		language: 'Custom'
+	};
+	opts.classes = {
+		active: 'flip-clock-active',
+		before: 'flip-clock-before',
+		divider: 'flip-clock-divider',
+		dot: 'flip-clock-dot',
+		label: 'flip-clock-label',
+		flip: 'flip',
+		play: 'play',
+		wrapper: 'flip-clock-small-wrapper'
+	};  
+	var countdown = 1661413920 - ((new Date().getTime())/1000); // from: 08/25/2022 12:52 am -0700
+	countdown = Math.max(1, countdown);
+	$('.clock-builder-output-mini-1').FlipClock(countdown, opts);
+});
+$(function(){
+	FlipClock.Lang.Custom = { days:'Days', hours:'小时', minutes:'分钟', seconds:'秒' };
+	var opts = {
+		clockFace: 'HourCounter',
+		countdown: true,
+		language: 'Custom'
+	};
+	opts.classes = {
+		active: 'flip-clock-active',
+		before: 'flip-clock-before',
+		divider: 'flip-clock-divider',
+		dot: 'flip-clock-dot',
+		label: 'flip-clock-label',
+		flip: 'flip',
+		play: 'play',
+		wrapper: 'flip-clock-small-wrapper'
+	};  
+	var countdown = 1661413920 - ((new Date().getTime())/1000); // from: 08/25/2022 12:52 am -0700
+	countdown = Math.max(1, countdown);
+	$('.clock-builder-output-mini-11').FlipClock(countdown, opts);
+});

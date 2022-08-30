@@ -23,9 +23,19 @@
         <a class="navbar-brand m-0 p-0" href="#">
           <img src="images/logo.png" alt="logo">
         </a>
-        <a class="navbar-brand m-0 p-0" href="#">
-          <img class="flag" src="images/england__flag.png" alt="logo">
-        </a>
+
+
+        <div class="dropdown change">
+          <a class="shadow-none p-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="flag  w-100" src="images/england__flag.png" alt="logo">
+          </a>
+        
+          <ul class="dropdown-menu border-0 shadow mt-1 p-0 ">
+            <li><a class="dropdown-item" href="#"><img class="flag" src="images/england__flag.png" alt="logo"></a></li>
+            <li><a class="dropdown-item" href="#"><img class="flag" src="images/england__flag.png" alt="logo"></a></li>
+            <li><a class="dropdown-item" href="#"><img class="flag" src="images/england__flag.png" alt="logo"></a></li>
+          </ul>
+        </div>
 
         <!-- =================================  -->
         <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -153,34 +163,33 @@
       <div class="modal-dialog">
         <div class="modal-content border-0 rounded-0">
           <div class="modal-header">
-            <h5 class="modal-title" id="headerLoginLabel">Welcome</h5>
+            <h5 class="modal-title" id="headerLoginLabel">温馨提示</h5>
           </div>
           <div class="modal-body">
             <!-- FORM FILL POP  -->
-            <form class="mt-4">
-              <div class="input-group">
-                <span class="input-group-text" id="basic-addon2"><img src="images/phone-solid.svg" alt=""></span>
-                <input type="text" class="form-control" placeholder="Contact Number" aria-label="Username" aria-describedby="basic-addon2">
+            <h5 class="modal-title text-center warn" id="headerLoginLabel">确定此选择？</h5>
+            <p class="text-center py-2 warn__text">
+              确定选择后不得做任何更改，谢谢！
+            </p>
+            <section class="three__btns p-0 m-0">
+              <div class="container p-0 m-0">
+                  <div class="d-flex justify-content-center align-items-center flex-wrap">
+                      
+                      <div class="me-2">
+                          <a class="gold__btn mx-auto" href="#">
+                            确定
+                          </a>
+                      </div>
+                      <div class=" me-3">
+                        <a class="gray__btn mx-auto" href="#">
+                          更改
+                        </a>
+                    </div>
+                  </div>
               </div>
+          </section>
 
-              <div class="input-group">
-                <span class="input-group-text" id="basic-addon3"><img src="images/lock-solid.svg" alt=""></span>
-                <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon3">
-                <div id="didnt" class="form-text d-block w-100 fst-italic text-end">
-                  <a href="#" class="text-decoration-underline fst-italic">forgot Password? </a>
-                </div>
-              </div>
-              <div class="d-flex justify-content-center align-items-center py-3">
-                <button type="submit" class="btn shadow-none modal__btn">LOGIN</button>
-              </div>
-              <div class="no__account">
-                <p>
-                  Don't have an account?
-                  <a href="#" class="text-decoration-underline">Register</a>
-                </p>
-              </div>
-
-            </form>
+            
           </div>
         </div>
       </div>

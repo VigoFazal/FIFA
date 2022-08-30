@@ -240,6 +240,32 @@ header {
         width: 35px;
      }
 
+    .dropdown.change {
+        width: 35px;
+
+    }
+    .dropdown-toggle::after {
+        content: none;
+    }
+    .dropdown-menu {
+        img.flag {
+            width: 35px;
+        }
+        min-width: fit-content;
+
+    }
+    .dropdown-menu.show {
+        margin-top: 5px !important;
+        padding: 8px 3px !important;
+    }
+    .dropdown-menu[data-bs-popper] {
+        top: 100%;
+        left: auto;
+        right: -40% !important;
+        
+    }
+    
+
      .offcanvas {
         background-image: url(../images/side__bar.png);
         background-size: 100%;
@@ -480,6 +506,29 @@ header {
             }
         }
     }
+    .three__btns {
+        .gold__btn,.gray__btn {
+            font-size: 18px;
+            height: 49px;
+            width: 130px;
+        }
+    }
+    .warn {
+        font-size: 34px;
+        @extend .chinese__font_regular;
+        color: $warning;
+        letter-spacing: 1px;
+    }
+    .warn__text {
+        color: $white;
+        font-size: 18px;
+        @extend .chinese__font_regular;
+
+        
+
+        
+
+    }
     
 }
 
@@ -554,13 +603,14 @@ header {
             padding: 0;
             width: 162px !important;
             height: 50px;
+            letter-spacing: 1px;
             @extend .chinese__font_xl_bold;
             &:hover {
                 color: $white;
             }
         }
         .nav-link.active {
-            color: $white;
+            color: $primary;
             background-image: url(../images/Leaderboard_tabs.svg);
             background-size: 100% 100%;
             transform: scale(1.2);
@@ -851,20 +901,21 @@ footer {
         letter-spacing: 7px;
         color: #222353;
         margin-bottom: 20px;
+        @extend .chinese__font_xl_bold;
       }
       .card__body {
         padding: 14px 12px;
         border: 10px solid;
-        border-image: url(../images/full__bar_border.png) 150/12px/0px stretch;
+        border-image: url(../images/full__bar_border.png) 140/17px/0px stretch;
         p {
-          font-size: 18px;
+          font-size: 14px;
           color: #222353;
           line-height: 140%;
           margin-bottom: 0;
         }
         ul,ol {
           li {
-            font-size: 19px;
+            font-size: 16px;
             color: #222353;
             line-height: 140%;
             margin-bottom: 5px;
